@@ -5,8 +5,8 @@ using namespace ComplexLib;
 using namespace std;
 int main()
 {
-    Complex c1(1.21,0.836);
-    Complex c2(5.343, 4.892);
+    Complex c1(0,0.836);
+    Complex c2(0,-4.892);
 
     cout << "La somma di " << c1 << " e " << c2 << " è " << "\n" << c1 + c2 << endl;
 
