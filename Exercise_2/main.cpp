@@ -5,10 +5,17 @@ using namespace ComplexLib;
 using namespace std;
 int main()
 {
-    Complex c1(0,0.836);
-    Complex c2(0,-4.892);
+    double a1 = 3.2;
+    double b1 = 0.836;
+    double a2 = -5.5145;
+    double b2 = -2.45334;
 
-    cout << "La somma di " << c1 << " e " << c2 << " è: " << "\n" << c1 + c2 << endl;
+    Complex c1(a1,b1); //oppure scrivo direttamente dentro al posto di a1 e b1
+    Complex c2(a2,b2);
+
+    cout << "Se a1 vale " << a1 << " e b1 vale " << b1 << ", il numero complesso è: " << c1 << endl;
+
+    cout << "\n" <<"La somma di " << c1 << " e " << c2 << " è: " << "\n" << c1 + c2 << endl;
 
     if (c1 == c2)
         cout << "\n" << "I due numeri sono uguali" << endl;
