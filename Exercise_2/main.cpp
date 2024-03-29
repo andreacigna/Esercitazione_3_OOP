@@ -8,7 +8,7 @@ int main()
     Complex c1(0,0.836);
     Complex c2(0,-4.892);
 
-    cout << "La somma di " << c1 << " e " << c2 << " è " << "\n" << c1 + c2 << endl;
+    cout << "La somma di " << c1 << " e " << c2 << " è: " << "\n" << c1 + c2 << endl;
 
     if (c1 == c2)
         cout << "\n" << "I due numeri sono uguali" << endl;
