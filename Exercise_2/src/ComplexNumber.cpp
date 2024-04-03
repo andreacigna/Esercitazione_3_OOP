@@ -1,5 +1,6 @@
 #include "ComplexNumber.hpp"
 #include <iostream>
+#include <limits>
 
 namespace ComplexLib{
 
@@ -11,7 +12,8 @@ namespace ComplexLib{
 }
 
  bool operator==(const Complex& c1, const Complex& c2){
-     return (abs(c1.real-c2.real)<=pow(10,-15) && abs(c1.imaginary-c2.imaginary)<=pow(10,-15));
+     double tolerance = numeric_limits<double>::epsilon(); //imposto la tolleranza al valore della precisione di macchina
+     return (std::abs(c1.real - c2.real) < tolerance) && (std::abs(c1.imaginary - c2.imaginary) < tolerance);
  }
 
 ostream& operator<<(ostream& os, const Complex& c){
