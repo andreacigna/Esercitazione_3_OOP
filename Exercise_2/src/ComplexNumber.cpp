@@ -22,9 +22,9 @@ ostream& operator<<(ostream& os, const Complex& c){
     else if (c.real == 0)
         os << c.imaginary << "i";
     else if (c.imaginary < 0)
-        os << c.real << " - " << abs(c.imaginary) << "i";
+        os << c.real << "-" << abs(c.imaginary) << "i";
     else
-        os << c.real << " + " << abs(c.imaginary) << "i";
+        os << c.real << "+" << abs(c.imaginary) << "i";
     return os;
 }
 

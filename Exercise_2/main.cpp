@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     double a1 = 3.2;
-    double b1 = 0.836;
+    double b1 = -0.836;
     double a2 = -5.5145;
     double b2 = -2.45334;
 
